@@ -1,0 +1,34 @@
+{
+	"name": "mirror-own",
+	"version": "0.0.0",
+	"description": "Mirror (copy) the own property descriptors from one object, onto another",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/mirror-own.git"
+	},
+	"keywords": [
+		"copy",
+		"mirror",
+		"own",
+		"properties",
+		"property",
+		"descriptor",
+		"descriptors",
+		"key",
+		"keys"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/mirror-own/issues"
+	},
+	"homepage": "https://github.com/ljharb/mirror-own#readme"
+}
