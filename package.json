@@ -1,6 +1,6 @@
 {
 	"name": "mirror-own",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Mirror (copy) the own property descriptors from one object, onto another",
 	"main": "index.js",
 	"exports": {

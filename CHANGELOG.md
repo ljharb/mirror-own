@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/ljharb/mirror-own/compare/v1.0.1...v1.1.0) - 2024-12-30
+
+### Commits
+
+- [New] add `skipFailures` option [`2409081`](https://github.com/ljharb/mirror-own/commit/2409081d74088cd05bddaff31f5c7c6f838664ff)
+- [meta] ensure posttest runs on windows [`bfc022e`](https://github.com/ljharb/mirror-own/commit/bfc022e8f3ac94a4eafd4b653054e0942a7e7920)
+
 ## [v1.0.1](https://github.com/ljharb/mirror-own/compare/v1.0.0...v1.0.1) - 2024-12-29
 
 ### Commits
