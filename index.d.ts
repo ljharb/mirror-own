@@ -4,6 +4,9 @@ declare function mirrorOwn<
 >(
 	target: T,
 	source: S,
+	options?: {
+		skipFailures?: boolean;
+	},
 ): void;
 
 export = mirrorOwn;
