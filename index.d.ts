@@ -1,9 +1,9 @@
 declare function mirrorOwn<
+	F extends Record<PropertyKey, unknown> | unknown[] | Function | object,
 	T extends Record<PropertyKey, unknown> | unknown[] | Function | object,
-	S extends Record<PropertyKey, unknown> | unknown[] | Function | object,
 >(
-	target: T,
-	source: S,
+	from: F,
+	to: T,
 	options?: {
 		skipFailures?: boolean;
 	},
