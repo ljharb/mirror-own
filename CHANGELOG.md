@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/ljharb/mirror-own/compare/v1.1.0...v1.1.1) - 2025-01-02
+
+### Commits
+
+- [types] fix type param names [`ea3a51e`](https://github.com/ljharb/mirror-own/commit/ea3a51e25371da4caaa9d1f8868da60c723225f2)
+
 ## [v1.1.0](https://github.com/ljharb/mirror-own/compare/v1.0.1...v1.1.0) - 2024-12-30
 
 ### Commits
