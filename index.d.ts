@@ -6,6 +6,7 @@ declare function mirrorOwn<
 	to: T,
 	options?: {
 		skipFailures?: boolean;
+		omit?: (key: keyof F) => boolean;
 	},
 ): void;
 

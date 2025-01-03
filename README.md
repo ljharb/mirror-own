@@ -40,6 +40,12 @@ The available options are:
 Must be a boolean, if present.
 If `true`, then non-configurable keys on `to` will be silently skipped.
 
+
+### `omit`
+
+Must be a predicate function, if present.
+It will be invoked once per key of `from`, and if it returns a truthy value, that key will not be mirrored onto `to`.
+
 ## Tests
 
 Clone the repo, `npm install`, and run `npm test`

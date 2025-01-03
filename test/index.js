@@ -190,6 +190,25 @@ test('mirrorOwn', function (t) {
 
 				s2t.end();
 			});
+
+			st.test('option: omit', function (s2t) {
+				s2t['throws'](
+					// @ts-expect-error
+					function () { mirrorOwn({}, {}, { omit: null }); },
+					TypeError,
+					'throws if `omit` is not a function'
+				);
+
+				var a = { a: 1, b: 2 };
+				var b = { __proto__: null };
+
+				mirrorOwn(a, b, { omit: function (k) { return k === 'b'; } });
+
+				s2t.deepEqual(a, { a: 1, b: 2 }, 'does not modify A');
+				s2t.deepEqual(b, { __proto__: null, a: 1 }, 'does not mirror omitted properties');
+
+				s2t.end();
+			});
 		});
 	});
 
