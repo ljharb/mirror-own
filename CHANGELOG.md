@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.0](https://github.com/ljharb/mirror-own/compare/v1.1.1...v1.2.0) - 2025-01-03
+
+### Commits
+
+- [New] add `omit` option [`9ebbd9f`](https://github.com/ljharb/mirror-own/commit/9ebbd9f35c564b8b5ebbb1c49f1767dd4851023a)
+- [Docs] better document `skipFailures` [`72c792f`](https://github.com/ljharb/mirror-own/commit/72c792fb24ac8b56c4cc5745fc9a8ca59fd1996f)
+- [Robustness] use a cached null object for default options [`b04158c`](https://github.com/ljharb/mirror-own/commit/b04158c39e87ecf07bac60b05aa606641f605ea6)
+
 ## [v1.1.1](https://github.com/ljharb/mirror-own/compare/v1.1.0...v1.1.1) - 2025-01-02
 
 ### Commits
