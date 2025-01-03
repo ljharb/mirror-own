@@ -13,7 +13,7 @@ module.exports = gOPD
 	? function mirrorOwn(from, to) {
 		var options = arguments.length > 2 ? arguments[2] : empty;
 		if ('skipFailures' in options && typeof options.skipFailures !== 'boolean') {
-			throw new $TypeError('`skipFailures` option must be a boolean');
+			throw new $TypeError('`skipFailures` option must be a boolean, if present');
 		}
 		var skipFailures = !!options.skipFailures;
 

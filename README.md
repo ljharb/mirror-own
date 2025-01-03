@@ -30,6 +30,16 @@ assert.deepEqual(a, { a: 1, b: 2, [Symbol.toStringTag]: 'foo' }, 'source object 
 assert.deepEqual(b, { a: 1, b: 2, c: 3, [Symbol.toStringTag]: 'foo' }, 'target object changed');
 ```
 
+## Options
+
+You may pass an optional options object as the third argument.
+The available options are:
+
+### `skipFailures`
+
+Must be a boolean, if present.
+If `true`, then non-configurable keys on `to` will be silently skipped.
+
 ## Tests
 
 Clone the repo, `npm install`, and run `npm test`
