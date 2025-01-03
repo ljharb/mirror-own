@@ -6,10 +6,12 @@ var gOPD = require('gopd');
 var ownKeys = require('own-keys');
 var $TypeError = require('es-errors/type');
 
+var empty = { __proto__: null };
+
 /** @type {import('.')} */
 module.exports = gOPD
 	? function mirrorOwn(from, to) {
-		var options = arguments.length > 2 ? arguments[2] : {};
+		var options = arguments.length > 2 ? arguments[2] : empty;
 		if ('skipFailures' in options && typeof options.skipFailures !== 'boolean') {
 			throw new $TypeError('`skipFailures` option must be a boolean');
 		}
@@ -58,7 +60,7 @@ module.exports = gOPD
 		}
 	}
 	: function mirrorOwn(from, to) {
-		var options = arguments.length > 2 ? arguments[2] : {};
+		var options = arguments.length > 2 ? arguments[2] : empty;
 		if ('skipFailures' in options && typeof options.skipFailures !== 'boolean') {
 			throw new $TypeError('`skipFailures` option must be a boolean');
 		}
